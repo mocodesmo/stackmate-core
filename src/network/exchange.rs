@@ -1,4 +1,4 @@
-const SATS_DENOMINATOR = 100000000.0;
+const SATS_DENOMINATOR:usize = 100000000.0;
 
 pub enum FiatUnit{
   INR,
@@ -19,7 +19,7 @@ pub enum SourceExchange{
 /// sats contains value of 1 FiatUnit as sats
 pub struct Rate {
   timestamp: u64,
-  fiat_unit: FiatUnit
+  fiat_unit: FiatUnit,
   source: SourceExchange,
   btc: f64,
   sats: f64
